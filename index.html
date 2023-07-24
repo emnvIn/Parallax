@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Scrolling Website | Vanilla Javascript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">LOGO</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="img/stars.png" alt="star" id="stars">
+        <img src="img/moon.png" alt="moon" id="moon">
+        <img src="img/mountains_behind.png" alt="mountains_behind" id="mountains_behind">
+        <h2 id="text">Moon Light</h2>
+        <a href="#sec" id="btn">Explore</a>
+        <img src="img/mountains_front.png" alt="mountains_front" id="mountains_front">
+    </section>
+    <div class="sec" id="sec">
+        <h2>Parallax Scrolloing Effects</h2>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae animi accusantium dolorum quisquam. Minima accusantium odio dolore facilis, aut minus! Distinctio, expedita illo architecto temporibus officiis dignissimos numquam non repellat?
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum repellat impedit vel delectus deleniti! Sequi odio impedit soluta vero, maiores ipsum architecto, quae enim, fugiat pariatur rerum. Quae, aperiam aspernatur?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto obcaecati odio porro similique fugit optio. Voluptas dolorum culpa inventore! Amet laboriosam porro totam esse dolores ipsum, dolorum provident pariatur inventore.
+            <br>
+            <br>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil sint recusandae dolorum ab minima explicabo omnis sed, quis nesciunt, quidem id animi cupiditate eligendi consequatur. Quibusdam incidunt modi dolore culpa!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum, quas? Porro possimus rerum labore sed a in. Nostrum, delectus consequatur in veritatis ipsam id explicabo, commodi omnis harum laudantium consequuntur.
+            <br>
+            <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ipsam ea saepe voluptate dolore, eos aperiam ad amet dicta voluptatum sapiente praesentium, tenetur et temporibus cupiditate. Veniam quo architecto molestias?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur excepturi nisi assumenda consequuntur perspiciatis facilis odit, nulla atque numquam quis libero iusto facere quisquam voluptatem soluta eaque animi officiis dolore.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione excepturi odit nulla quas eos sint impedit ipsam architecto vel! Doloremque ipsa veniam quaerat asperiores nostrum exercitationem quibusdam sit perferendis rerum!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione excepturi odit nulla quas eos sint impedit ipsam architecto vel! Doloremque ipsa veniam quaerat asperiores nostrum exercitationem quibusdam sit perferendis rerum!
+            <br>
+            <br>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil sint recusandae dolorum ab minima explicabo omnis sed, quis nesciunt, quidem id animi cupiditate eligendi consequatur. Quibusdam incidunt modi dolore culpa!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum, quas? Porro possimus rerum labore sed a in. Nostrum, delectus consequatur in veritatis ipsam id explicabo, commodi omnis harum laudantium consequuntur.
+            <br>
+            <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ipsam ea saepe voluptate dolore, eos aperiam ad amet dicta voluptatum sapiente praesentium, tenetur et temporibus cupiditate. Veniam quo architecto molestias?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur excepturi nisi assumenda consequuntur perspiciatis facilis odit, nulla atque numquam quis libero iusto facere quisquam voluptatem soluta eaque animi officiis dolore.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione excepturi odit nulla quas eos sint impedit ipsam architecto vel! Doloremque ipsa veniam quaerat asperiores nostrum exercitationem quibusdam sit perferendis rerum!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione excepturi odit nulla quas eos sint impedit ipsam architecto vel! Doloremque ipsa veniam quaerat asperiores nostrum exercitationem quibusdam sit perferendis rerum!
+        </p>
+    </div>
+
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let mountains_front = document.getElementById('mountains_front');
+        let header = document.querySelector('header');
+
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 + 'px';
+            moon.style.top = value * 1.05 + 'px';
+            mountains_behind.style.top = value * 0.5 + 'px';
+            mountains_front.style.top = value * 0 + 'px';
+            text.style.marginRight = value * 2.5 + 'px';
+            text.style.marginTop = value * 1.5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            header.style.top = value * 0.5 + 'px';
+        });
+    </script>
+</body>
+</html>
