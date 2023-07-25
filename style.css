@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;800&display=swap');
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    background: #333;
+}
+
+.logo{
+    width: 100px;
+}
+
+header{
+    position: absolute;/*position은 공중에 뜨니까 스크롤이 없어짐*/
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    width: 100%;
+    padding: 0.9rem 0;
+    border-bottom: 1px solid rgb(255, 255, 255, 0.1);
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    align-items: center;/*로고가 안 늘어나짐*/
+}
+
+header nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 0 1.5rem;
+    font-weight: 300;
+    font-size: 0.83em;
+}
+
+.search a{
+    font-size: 1.05rem;
+    padding: 0 3rem;
+}
+
+li.hamburger{
+    margin-left: 1.5rem;
+}
+li.hamburger a{/*a 태그에 이미 패딩 들어가 있어서 이게 있으면 정원이 아님*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 37px;
+    height: 37px;
+    margin: 0 auto;
+    padding: 0;/*모양 잡고 bar 보여주기위해 패딩 빼주고 부모한테 넣기*/
+    border-radius: 50%;
+    background-color: rgb(115, 115, 115, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+li.hamburger a .bar{
+    position: relative;
+    width: 52%;
+    height: 1.3px;
+    background-color: #fff;
+    border-radius: 2px;
+    
+}
+li.hamburger a .bar::before,
+li.hamburger a .bar::after{
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    border-radius: 2px;
+    background-color: inherit;
+    transform: translateX(20%);
+}
+li.hamburger a .bar::before{
+    top: -5.2px;
+    height: 111.54%;
+}
+li.hamburger a .bar::after{
+    top: 4.5px;
+}
+
+main{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.bg-img{
+    position: absolute;
+    width: 2800px;
+    top: calc(50% - 350px);
+    left: calc(50% + 10px);
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.fog_7{
+    position: absolute;
+    width: 1900px;
+    top: calc(50% - 130px);
+    left: calc(50% + 300px);
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.mountain_10{
+    position: absolute;
+    width: 892px;
+    top: calc(50% + 120px);
+    left: calc(50% + 230px);
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+.fog_6{
+    position: absolute;
+    width: 1610px;
+    top: calc(50% + 125px);
+    left: calc(50% + 10px);
+    transform: translate(-50%, -50%);
+    z-index: 4;
+}
+
+.mountain_9{
+    position: absolute;
+    width: 450px;
+    top: calc(50% + 120px);
+    left: calc(50% - 457px);
+    transform: translate(-50%, -50%);
+    z-index: 5;
+}
+
+.mountain_8{
+    position: absolute;
+    width: 750px;
+    top: calc(50% + 100px);
+    left: calc(50% - 202px);
+    transform: translate(-50%, -50%);
+    z-index: 6;
+}
+
+.fog_5{
+    position: absolute;
+    width: 450px;
+    top: calc(50% + 190px);
+    left: calc(50% - 20px);
+    transform: translate(-50%, -50%);
+    z-index: 7;
+}
+
+.mountain_7{
+    position: absolute;
+    width: 530px;
+    top: calc(50% + 160px);
+    left: calc(50% + 305px);
+    transform: translate(-50%, -50%);
+    z-index: 8;
+}
+
+.text{
+    position: absolute;
+    left: 50%;
+    top: calc(50% - 100px);
+    transform: translate(-50%,-50%);
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    z-index: 9;
+}
+.text p{
+    font-weight: 100;
+    font-size: 6.5rem;
+    line-height: 0.88;
+}
+.text h1{
+    font-weight: 800;
+    font-size: 8rem;
+    line-height: 0.88;
+}
+
+.mountain_6{
+    position: absolute;
+    width: 408px;
+    top: calc(50% + 100px);
+    left: calc(50% + 590px);
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.fog_4{
+    position: absolute;
+    width: 590px;
+    top: calc(50% + 223px);
+    left: calc(50% - 60px);
+    transform: translate(-50%, -50%);
+    z-index: 11;
+}
+
+.mountain_5{
+    position: absolute;
+    width: 550px;
+    top: calc(50% + 250px);
+    left: calc(50% + 130px);
+    transform: translate(-50%, -50%);
+    z-index: 12;
+}
+
+.fog_3{
+    position: absolute;
+    width: 1600px;
+    top: calc(50% + 110px);
+    left: calc(50% - 15px);
+    transform: translate(-50%, -50%);
+    z-index: 13;
+}
+
+.mountain_4{
+    position: absolute;
+    width: 750px;
+    top: calc(50% + 200px);
+    left: calc(50% - 385px);
+    transform: translate(-50%, -50%);
+    z-index: 14;
+}
+
+.mountain_3{
+    position: absolute;
+    width: 538px;
+    top: calc(50% + 53px);
+    left: calc(50% + 750px);
+    transform: translate(-50%, -50%);
+    z-index: 15;
+}
+
+.fog_2{
+    position: absolute;
+    width: 1600px;
+    top: calc(50% + 250px);
+    left: calc(50% + 390px);
+    transform: translate(-50%, -50%);
+    z-index: 16;
+    filter: invert(100%);
+}
+
+.mountain_2{
+    position: absolute;
+    width: 608px;
+    top: calc(50% + 150px);
+    left: calc(50% + 450px);
+    transform: translate(-50%, -50%);
+    z-index: 15;
+}
+
+.mountain_1{
+    position: absolute;
+    width: 458px;
+    top: calc(50% + 20px);
+    left: calc(50% - 600px);
+    transform: translate(-50%, -50%);
+    z-index: 16;
+}
