@@ -6,6 +6,7 @@
     <title>Parallax Website</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"/>
     <link rel="stylesheet" href="style.css">
+    <script src="js.js" defer></script>
 </head>
 <body>
     <header>
@@ -33,33 +34,33 @@
     </header>
 
     <main>
-        <div class="vignette"></div>
-        <img src="img/background.png" class="parallax bg-img" alt="background">
-        <img src="img/fog_7.png" class="parallax fog_7" alt="fog_7">
-        <img src="img/mountain_10.png" class="parallax mountain_10" alt="mountain_10">
-        <img src="img/fog_6.png" class="parallax fog_6" alt="fog_6">
-        <img src="img/mountain_9.png" class="parallax mountain_9" alt="mountain_9">
-        <img src="img/mountain_8.png" class="parallax mountain_8" alt="mountain_8">
-        <img src="img/fog_5.png" class="parallax fog_5" alt="fog_5">
-        <img src="img/mountain_7.png" class="parallax mountain_7" alt="mountain_7">
+        <div class="vignette"></div> <!--data- = setAttribute / 0.3=30% -->
+        <img src="img/background.png" data-speedx="0.3" data-speedy="0.38" data-speedz="0" data-rotation="0" class="parallax bg-img" alt="background">
+        <img src="img/fog_7.png" data-speedx="0.27" data-speedy="0.32" data-speedz="0" data-rotation="0" class="parallax fog_7" alt="fog_7">
+        <img src="img/mountain_10.png" data-speedx="0.195" data-speedy="0.305" data-speedz="0" data-rotation="0" class="parallax mountain_10" alt="mountain_10">
+        <img src="img/fog_6.png" data-speedx="0.25" data-speedy="0.28" data-speedz="0" data-rotation="0" class="parallax fog_6" alt="fog_6">
+        <img src="img/mountain_9.png" data-speedx="0.125" data-speedy="0.155" data-speedz="0.15" data-rotation="0.02" class="parallax mountain_9" alt="mountain_9">
+        <img src="img/mountain_8.png" data-speedx="0.1" data-speedy="0.11" data-speedz="0" data-rotation="0.2" class="parallax mountain_8" alt="mountain_8">
+        <img src="img/fog_5.png" data-speedx="0.16" data-speedy="0.105" data-speedz="0"  data-rotation="0" class="parallax fog_5" alt="fog_5">
+        <img src="img/mountain_7.png" data-speedx="0.1" data-speedy="0.1" data-speedz="0" data-rotation="0.9" class="parallax mountain_7" alt="mountain_7">
         
-        <div class="text parallax">
+        <div class="text parallax" data-speedx="0.07" data-speedy="0.07" data-speedz="0" data-rotation="0.11">
             <p>Parallax</p>
             <h1>Loremipsum</h1>
         </div>
 
-        <img src="img/mountain_6.png" class="parallax mountain_6" alt="mountain_6">
-        <img src="img/fog_4.png" class="parallax fog_4" alt="fog_4">
-        <img src="img/mountain_5.png" class="parallax mountain_5" alt="mountain_5">
-        <img src="img/fog_3.png" class="parallax fog_3" alt="fog_3">
-        <img src="img/mountain_4.png" class="parallax mountain_4" alt="mountain_4">
-        <img src="img/mountain_3.png" class="parallax mountain_3" alt="mountain_3">
-        <img src="img/fog_2.png" class="parallax fog_2" alt="fog_2">
-        <img src="img/mountain_2.png" class="parallax mountain_2" alt="mountain_2">
-        <img src="img/mountain_1.png" class="parallax mountain_1" alt="mountain_1">
+        <img src="img/mountain_6.png" data-speedx="0.065" data-speedy="0.05" data-speedz="0.5" data-rotation="0.12" class="parallax mountain_6" alt="mountain_6">
+        <img src="img/fog_4.png" data-speedx="0.135" data-speedy="0.38" data-speedz="0" data-rotation="0" class="parallax fog_4" alt="fog_4">
+        <img src="img/mountain_5.png" data-speedx="0.08" data-speedy="0.058" data-speedz="0.13" data-rotation="0.1" class="parallax mountain_5" alt="mountain_5">
+        <img src="img/fog_3.png" data-speedx="0.11" data-speedy="0.018" data-speedz="0" data-rotation="0" class="parallax fog_3" alt="fog_3">
+        <img src="img/mountain_4.png" data-speedx="0.059" data-speedy="0.024" data-speedz="0.35" data-rotation="0.14" class="parallax mountain_4" alt="mountain_4">
+        <img src="img/mountain_3.png" data-speedx="0.04" data-speedy="0.018" data-speedz="0.32" data-rotation="0.05" class="parallax mountain_3" alt="mountain_3">
+        <img src="img/fog_2.png" data-speedx="0.15" data-speedy="0.0115" data-speedz="0" data-rotation="0" class="parallax fog_2" alt="fog_2">
+        <img src="img/mountain_2.png" data-speedx="0.0265" data-speedy="0.013" data-speedz="0.42" data-rotation="0.15" class="parallax mountain_2" alt="mountain_2">
+        <img src="img/mountain_1.png" data-speedx="0.027" data-speedy="0.018" data-speedz="0.53" data-rotation="0.2" class="parallax mountain_1" alt="mountain_1">
         <img src="img/sun_rays.png" class="sun_rays" alt="sun_rays">
         <img src="img/black_shadow.png" class="black_shadow" alt="black_shadow">
-        <img src="img/fog_1.png" class="parallax fog_1" alt="fog_1">
+        <img src="img/fog_1.png" data-speedx="0.12" data-speedy="0.01" data-speedz="0" data-rotation="0" class="parallax fog_1" alt="fog_1">
     </main>
 </body>
 </html>
